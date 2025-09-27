@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tags And Attributes</title>
+</head>
+<body>
+
+    <h1 style="font-family: sans-serif; text-align: center; color: pink;"><u>Form Tags And Attributes</u></h1>
+
+    <form action="#" method="post">
+
+        <table style="border: 2px solid darkmagenta; background-color: pink; font-family: sans-serif;" cellpadding="10px" align="center">
+
+            <tr>
+                <th colspan="2"><u>Please Fill The Form</u></th>
+            </tr>
+
+            <tr>
+                <td><label for="first_name">First Name:</label></td>
+                <td><input type="text" name="First_Name" value="Deepak Kumar" maxlength="12" placeholder="Enter your firts name...." required pattern="[a-zA-Z]{2,12}"
+                    title="Please enter max 12 and min 2 Letters only"></td>
+            </tr>
+
+            <tr>
+                <td><label for="middle_name">Middle Name:</label></td>
+                <td><input type="text" name="middle_name" placeholder="Enter your Middle name..."></td>
+            </tr>
+
+            <tr>
+                <td><label for="last_name"></label>Last Name:</td>
+                <td><input type="text" name="last_name" placeholder="Enter your Last name..."></td>
+            </tr>
+
+            <tr>
+                <td><label for="email"></label>Email:</td>
+                <td><input type="email" value="deepakp9092@gmail.com" disabled></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" maxlength="6" placeholder="Enter Password..." value="1234" readonly></td>
+            </tr>
+
+            <tr>
+                <td><label for="mobile">Mobile:</label></td>
+                <td><input type="tel" placeholder="Enter your mobile no..." maxlength="10" required pattern="[0-9]+" title=" 10 Digits Only..."></td>
+            </tr>
+
+            <tr>
+                <td><label for="number">Number:</label></td>
+                <td><input type="number" placeholder="Enter Your Number..."></td>
+            </tr>
+
+            <tr>
+                <td><label for="search">Search:</label></td>
+                <td><input type="search"></td>
+            </tr>
+
+            <tr>
+                <td><label for="url">Url:</label></td>
+                <td><input type="url" placeholder="https://twitter.com"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Gender">Gender:</label></td>
+                <td><input type="radio" checked>Male
+                    <input type="radio">Female
+                    <input type="radio">Other
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="date">Date:</label></td>
+                <td><input type="date" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="BirthDate">BirthDate:</label></td>
+                <td><input type="datetime-local"></td>
+            </tr>
+
+            <tr>
+                <td><label for="month">Month:</label></td>
+                <td><input type="month"></td>
+            </tr>
+
+            <tr>
+                <td><label for="time">Time:</label></td>
+                <td><input type="time"></td>
+            </tr>
+
+            <tr>
+                <td><label for="week">Week:</label></td>
+                <td><input type="week"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Language">Language:</label></td>
+                <td><input type="checkbox">Hindi
+                    <input type="checkbox">English
+                    <input type="checkbox">Tamil
+                    <input type="checkbox">Bangali
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Hobbies">Hobbies:</label></td>
+                <td><input type="checkbox">Music<br>
+                    <input type="checkbox">Singing<br>
+                    <input type="checkbox">Dancing<br>
+                    <input type="checkbox" checked>Cooking
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Course">Course:</label></td>
+                <td>
+                    <select id="Course">
+                        <option value="BCA">BCA</option>
+                        <option value="MCS">MCA</option>
+                        <option value="BBA">BBA</option>
+                        <option value="MBA">MBA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Address">Address:</label></td>
+                <td><textarea rows="5" cols="40"></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="Select Country">Select Country:</label></td>
+                <td>
+                    <select name="Select_Country" id="Select_Country">
+                        <option hidden>--Select Country--</option>
+                        <option value="India" selected>India</option>
+                        <option value="USA">USA</option>
+                        <oPtion value="Austrelia">Austrelia</oPtion>
+                        <option value="New york">New York</option>
+                    </select>
+
+                    <select name="Select_State" id="Select_State">
+                        <option hidden>--Select State--</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <OPtion value="Udaipur">Udaipur</OPtion>
+                        <option value="Ajmer" disabled>Ajmer</option>
+                    </select>
+
+                    <select name="Select_City" id="Select_City">
+                        <option hidden>--Select City--</option>
+                        <option value="Pindwara">Pindwara</option>
+                        <option value="Sirohi">Sirohi</option>
+                        <OPtion value="Aburoad">Aburoad</OPtion>
+                        <option value="MountAbu">MountAbu</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="range">Range:</label></td>
+                <td><input type="range"></td>
+            </tr>
+
+            <tr>
+                <td><label for="color">Color:</label></td>
+                <td><input type="color"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Quantity">Quantity:</label></td>
+                <td><input type="number" min="1" max="5"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Upload an image">Upload an Images:</label></td>
+                <td><input type="file" multiple></td>
+            </tr>
+
+            <tr>
+                <td><label for="image">Image:</label></td>
+                <td><input type="image" src="https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?auto=compress&cs=tinysrgb&w=600" alt="submit" width="200" height="150"></td>
+            </tr>
+
+            <tr>
+                <td><label for="button"> Button:</label></td>
+                <td><input type="button" value="Click me"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Submit">Submit:</label></td>
+                <td><input type="submit"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="Submit" value="Sign up">
+                    <input type="Reset">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
